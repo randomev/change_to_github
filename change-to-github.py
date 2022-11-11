@@ -26,7 +26,7 @@ def handle_repo(repo, githubuser, tmpdir, repodir):
     # /a/git/CUSTOMER/PROJECT.GIT and parse them from the path
 
     # whether to actually run these commands or not
-    actuallyruncommands = True
+    actuallyruncommands = False
 
     splitted = repo.split('/')
     name = splitted[len(splitted)-1].replace('.git','')
